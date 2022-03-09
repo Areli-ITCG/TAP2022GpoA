@@ -29,4 +29,10 @@ public class ManPersona
      System.out.println(persona.getNombre() + "  " + persona.getTelefono());
     }
   }
+  
+  public ArrayList Datos()
+  {
+     return Arrpersona;
+  }
+
 }
