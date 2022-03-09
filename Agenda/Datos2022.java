@@ -49,7 +49,7 @@ JLabel lblCorreo = new JLabel("Correo electronico: ", JLabel.RIGHT);
     
     btnGuardar = new JButton("Guardar");
     btnGuardar.addActionListener(this);
-     btnCancelar = new JButton("Cancelar");
+     btnCancelar = new JButton("Mostrar");
     btnCancelar.addActionListener(this);
     
     add(btnGuardar);
@@ -90,8 +90,10 @@ JLabel lblCorreo = new JLabel("Correo electronico: ", JLabel.RIGHT);
     }
     
     if(e.getSource()==btnCancelar){
-    mpa.mostrar();
-    System.exit(0);}    
+    JFrameTablaDatos jft = new JFrameTablaDatos();
+   //mpa.mostrar();
+    //System.exit(0);
+    }    
        
   }
 }
